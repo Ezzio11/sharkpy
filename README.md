@@ -2,7 +2,7 @@
 
 A friendly machine learning framework with shark-themed feedback! SharkPy simplifies the machine learning workflow while making it fun and educational.
 
-## 🎯 Features
+## Features
 
 - **Model Battle Arena**: Compare multiple models automatically
 - **Smart Reporting**: Generate reports in TXT, PDF, and DOCX formats
@@ -11,7 +11,7 @@ A friendly machine learning framework with shark-themed feedback! SharkPy simpli
 - **Automated Optimization**: Hyperparameter tuning with Optuna
 - **Shapash Integration**: Interactive dashboards for model interpretation
 
-## 🚀 Quick Start
+## Quick Start
 
 ### Installation
 
@@ -77,7 +77,7 @@ print(f"Winner: {battle_results['champion']}")
 print(f"Score: {battle_results['score']:.4f}")
 ```
 
-## 📊 Supported Models
+## Supported Models
 
 - Linear Regression
 - Logistic Regression
@@ -90,7 +90,7 @@ print(f"Score: {battle_results['score']:.4f}")
 - LightGBM (with full installation)
 - CatBoost (with full installation)
 
-## 📝 Reports
+## Reports
 
 SharkPy can generate comprehensive reports in multiple formats:
 
@@ -105,7 +105,7 @@ shark.report(export_path='report.pdf', format='pdf')
 shark.report(export_path='report.docx', format='docx')
 ```
 
-## 📈 Visualizations
+## Visualizations
 
 ```python
 # Prediction plot
@@ -118,7 +118,7 @@ shark.plot(kind="feature_importance")
 shark.explain_with_shapash()
 ```
 
-## 🧠 Model Explanations
+## Model Explanations
 
 ```python
 # Get friendly explanations of your model
@@ -128,7 +128,7 @@ shark.explain()
 shark.explain_with_shapash(title_story="My Analysis")
 ```
 
-## 💾 Save & Load Models
+## Save & Load Models
 
 ```python
 # Save your model
@@ -138,7 +138,7 @@ shark.save_model(name="my_model")
 shark.load_model("models/my_model.joblib")
 ```
 
-## 🛠️ Development
+## Development
 
 ```bash
 # Install development dependencies
@@ -151,28 +151,29 @@ pytest
 black sharkpy/
 ```
 
-## 📚 Documentation
+## Documentation
 
 Full documentation is available at [sharkpy.readthedocs.io](https://sharkpy.readthedocs.io/)
 
-## 🤝 Contributing
+## Contributing
 
 Contributions are welcome! Please feel free to submit a Pull Request.
 
-## 📄 License
+## License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-## 🙏 Acknowledgments
+## Acknowledgments
 
 - Built with scikit-learn, XGBoost, and other amazing open-source tools
 - Inspired by making machine learning more accessible and fun
 
-## 📧 Contact
+## Contact
 
 - Author: Ezz Eldin Ahmed
 - Email: ezzeldinahmad96@gmail.com
 - GitHub: [Ezzio11](https://github.com/Ezzio11)
 
 ---
+
 Made with 🦈 by SharkPy Team
