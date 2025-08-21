@@ -1,19 +1,5 @@
 # Documentation dependencies
-sphinx>=7.0.0
-sphinx-rtd-theme>=2.0.0
-sphinx-autoapi>=3.0.0
-myst-parser>=2.0.0
-sphinx-copybutton>=0.5.0
-sphinx-design>=0.5.0
-sphinxext-opengraph>=0.12.0
-sphinx-issues>=3.0.0
-sphinx-panels>=0.6.0
-sphinxcontrib-mermaid>=1.0.0
-sphinxcontrib-plantuml>=0.25
-sphinx-gallery>=0.15.0
-numpydoc>=1.5.0
-sphinxcontrib-bibtex>=2.5.0
-sphinx-togglebutton>=0.3.0
-sphinx-favicon>=1.0.0
-
-sphinxcontrib-youtube>=1.0.0
+sphinx>=4.0.0
+sphinx-rtd-theme>=0.5.0
+sphinx-autoapi>=1.8.0
+myst-parser>=0.15.0
