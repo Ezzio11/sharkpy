@@ -1,0 +1,48 @@
+/* docs/_static/custom.css */
+
+/* Custom styling for SharkPy documentation */
+
+.wy-side-nav-search {
+    background-color: #2E86AB !important;
+}
+
+.wy-nav-top {
+    background-color: #2E86AB !important;
+}
+
+.wy-menu-vertical header, .wy-menu-vertical p.caption {
+    color: #2E86AB !important;
+}
+
+/* Custom buttons */
+.btn-primary {
+    background-color: #2E86AB;
+    border-color: #2E86AB;
+}
+
+.btn-primary:hover {
+    background-color: #1C5A7D;
+    border-color: #1C5A7D;
+}
+
+/* Code highlighting */
+.highlight {
+    border-radius: 4px;
+    border: 1px solid #e1e4e5;
+}
+
+/* Custom admonitions */
+.admonition-shark {
+    border-color: #2E86AB;
+    background-color: #f0f8ff;
+}
+
+.admonition-shark .admonition-title {
+    background-color: #2E86AB;
+    color: white;
+}
+
+/* Table styling */
+.wy-table-responsive table td, .wy-table-responsive table th {
+    white-space: normal !important;
+}
