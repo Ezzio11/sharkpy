@@ -1,0 +1,12 @@
+pandas>=1.3.0
+numpy>=1.19.0
+scikit-learn>=0.24.0
+matplotlib>=3.4.0
+seaborn>=0.11.0
+statsmodels>=0.12.0
+joblib>=1.0.0
+optuna>=2.8.0
+xgboost>=1.4.0
+shapash>=2.0.0
+python-docx>=0.8.11
+docx2pdf>=0.1.8
