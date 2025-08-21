@@ -223,18 +223,23 @@ class Shark:
         """
         return predict_baseline(self)
 
-    def plot(self, kind: str = "prediction", show: bool = True, save_path: Optional[str] = None):
+    def plot(self, kind: str = "prediction", show: bool = True, 
+            save_path: Optional[str] = None, colors: Optional[Dict[str, str]] = None):
         """
         Visualize model behavior based on the specified plot type.
 
         Parameters
         ----------
         kind : str, optional
-            Type of plot: 'prediction', 'residuals', 'confusion_matrix', 'roc', 'pr_curve', 'proba_hist', or 'feature_importance' (default: 'prediction').
+            Type of plot: 'prediction', 'residuals', 'confusion_matrix', 'roc', 
+            'pr_curve', 'proba_hist', or 'feature_importance' (default: 'prediction').
         show : bool, optional
             Whether to display the plot (default: True).
         save_path : str, optional
             Path to save the plot (default: None).
+        colors : dict, optional
+            Custom color specifications for the plot. If None, uses default SharkPy colors.
+            Available keys: 'primary', 'secondary', 'accent', 'background', 'grid', 'text', 'bars'
 
         Returns
         -------
@@ -251,8 +256,34 @@ class Shark:
         >>> data = pd.DataFrame({'x': [1, 2, 3], 'y': [0, 1, 0]})
         >>> shark.learn(data, target='y')
         >>> shark.plot(kind='confusion_matrix')
+        
+        >>> # Custom colors example
+        >>> custom_colors = {
+        >>>     'primary': '#FF6B6B',    # Coral red
+        >>>     'secondary': '#4ECDC4',  # Turquoise
+        >>>     'background': '#F7FFF7'  # Light green
+        >>> }
+        >>> shark.plot(kind='feature_importance', colors=custom_colors)
         """
-        return plot_model(self.model, self.features, self.target, kind, show, save_path)
+        if not hasattr(self, 'model') or self.model is None:
+            raise ValueError("No model trained yet. Call learn() first.")
+        
+        if not hasattr(self, 'features') or self.features is None:
+            raise ValueError("No feature data available.")
+        
+        if not hasattr(self, 'target') or self.target is None:
+            raise ValueError("No target data available.")
+        
+        return plot_model(
+            model=self.model, 
+            X=self.features, 
+            y=self.target, 
+            kind=kind, 
+            show=show, 
+            save_path=save_path,
+            feature_names=self.feature_names if hasattr(self, 'feature_names') else None,
+            colors=colors
+        )
 
     def report(self, cv_folds: int = 5, export_path: Optional[str] = None, format: str = 'txt') -> tuple:
         """
