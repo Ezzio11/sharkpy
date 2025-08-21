@@ -6,7 +6,7 @@ A friendly machine learning framework with shark-themed feedback! SharkPy simpli
 
 - **Model Battle Arena**: Compare multiple models automatically
 - **Smart Reporting**: Generate reports in TXT, PDF, and DOCX formats
-- **Interactive Visualization**: Beautiful plots with shark-themed styling
+- **Model Visualization**: Beautiful plots with shark-themed styling
 - **Model Explanations**: Clear explanations of model behavior
 - **Automated Optimization**: Hyperparameter tuning with Optuna
 - **Shapash Integration**: Interactive dashboards for model interpretation
@@ -177,3 +177,4 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 ---
 
 Made with 🦈 by SharkPy Team
+
