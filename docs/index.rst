@@ -1,14 +1,13 @@
 Welcome to SharkPy's documentation!
 ==================================
 
-SharkPy is a friendly machine learning framework with shark-themed feedback.
+🦈 A friendly machine learning framework with shark-themed feedback!
 
 .. toctree::
    :maxdepth: 2
+   :caption: Contents:
 
-   installation
-   usage
-   api
+   modules
 
 Indices and tables
 ==================
