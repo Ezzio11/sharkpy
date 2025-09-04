@@ -41,24 +41,24 @@ classifiers = [
 ]
 
 dependencies = [
-    "pandas>=1.3.0",
-    "numpy>=1.19.0",
-    "scikit-learn>=0.24.0",
-    "matplotlib>=3.4.0",
-    "seaborn>=0.11.0",
-    "statsmodels>=0.12.0",
-    "joblib>=1.0.0",
-    "optuna>=2.8.0",
-    "xgboost>=1.4.0",
-    "shapash>=2.0.0",
-    "python-docx>=0.8.11",
-    "docx2pdf>=0.1.8"
+    "pandas>=2.2.3",        # Python 3.13 support added in v2.2.3
+    "numpy>=2.1.0",         # Python 3.13 support added in v2.1.0
+    "scikit-learn>=1.2.0",  # tested safe on 3.11–3.13
+    "matplotlib>=3.6.0",    # 3.6+ supports newer Python versions
+    "seaborn>=0.12.0",      # works with modern pandas/matplotlib
+    "statsmodels>=0.13.0",  # supports 3.11+ cleanly
+    "joblib>=1.2.0",        # 1.2+ tested on Python 3.11+
+    "optuna>=3.0.0",        # modern version with Py 3.11+ support
+    "xgboost>=1.7.0",       # 1.7+ supports Python 3.11+
+    "shapash>=2.3.0",       # 2.3+ tested with 3.11–3.13
+    "python-docx>=0.8.11",  # pure-Python, no issues
+    "docx2pdf>=0.1.8"       # pure-Python, no issues
 ]
 
 [project.optional-dependencies]
 full = [
-    "lightgbm>=3.2.0",
-    "catboost>=0.24.0"
+    "lightgbm>=3.3.2",      # 3.3.2+ required for Python 3.11/3.12
+    "catboost>=1.2"         # 1.2+ stable on Python 3.12/3.13
 ]
 dev = [
     "pytest>=6.0.0",
@@ -97,4 +97,5 @@ include = '\.pyi?$'
 profile = "black"
 
 multi_line_output = 3
+
 
