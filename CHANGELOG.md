@@ -12,4 +12,14 @@
 - Multiple model support
 
 ### Known Issues
+
 - PDF report export requires Microsoft Word or LibreOffice installed for `docx2pdf` conversion.
+
+---
+
+## [1.0.1] - 2025-09-04
+### Added
+- New Python versions support (v3.11, v3.12, v3.13)
+
+### Updated
+- Dependencies requirements versions. 
