@@ -8,7 +8,7 @@ build:
   jobs:
     post_create_environment:
       # Install system dependencies for better plotting and PDF generation
-      - apt-get update && apt-get install -y graphviz dvipng texlive-latex-extra texlive-fonts-recommended
+      - sudo apt-get update && sudo apt-get install -y graphviz dvipng texlive-latex-extra texlive-fonts-recommended
 
 python:
   install:
