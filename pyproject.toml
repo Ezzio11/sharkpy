@@ -4,7 +4,7 @@ build-backend = "hatchling.build"
 
 [project]
 name = "sharkpy"
-version = "1.0.0"
+version = "1.0.1"
 description = "A friendly machine learning framework with shark-themed feedback 🦈"
 readme = "README.md"
 requires-python = ">=3.8"
@@ -97,3 +97,4 @@ include = '\.pyi?$'
 profile = "black"
 
 multi_line_output = 3
+
